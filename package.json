@@ -1,0 +1,21 @@
+{
+  "name": "sai-uday-reddy-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website for Sai Uday Reddy with Python Flask backend and Resend Email API",
+  "scripts": {
+    "dev": "python backend/app.py",
+    "start": "python backend/app.py",
+    "serve": "python backend/app.py"
+  },
+  "keywords": [
+    "portfolio",
+    "python",
+    "flask",
+    "resend",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Sai Uday Reddy",
+  "license": "MIT"
+}

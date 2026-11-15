@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: sai-uday-reddy-portfolio-backend
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: gunicorn --chdir backend app:app --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.5
+      - key: RESEND_API_KEY
+        sync: false
+      - key: CONTACT_EMAIL
+        value: udayreddy8886@gmail.com
+      - key: RESEND_FROM_EMAIL
+        value: Portfolio Contact <onboarding@resend.dev>
+      - key: CORS_ORIGIN
+        value: "*"
+      - key: FLASK_ENV
+        value: production
